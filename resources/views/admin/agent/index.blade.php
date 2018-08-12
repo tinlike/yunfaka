@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 @section('content')
 <section class="Hui-article-box">
-    <nav class="breadcrumb"><i class="Hui-iconfont"></i> <a href="/" class="maincolor">首页</a> <span class="c-999 en">&gt;</span><span class="c-666">会员列表</span></nav>
+    <nav class="breadcrumb"><i class="Hui-iconfont"></i> <a href="/" class="maincolor">首页</a> <span class="c-999 en">&gt;</span><span class="c-666">卡密配置</span></nav>
     <div class="Hui-article">
         <div class="cl pd-20">
             <div class="mt-20">
@@ -9,13 +9,9 @@
                     <thead>
                         <tr class="text-c">
                             <th>ID</th>
-                            <th>用户名</th>
-                            <th>手机</th>
-                            <th>邮箱</th>
-                            <th>注册时间</th>
-                            <th>到期时间</th>
-                            <th>所属代理</th>
-                            <th>余额</th>
+                            <th>代理名称</th>
+                            <th>卡密</th>
+                            <th>所属产品</th>
                             <th>状态</th>
                             <th>操作</th>
                         </tr>
@@ -24,13 +20,9 @@
                         @foreach($users as $item)
                         <tr class="text-c">
                             <td>{{ $item->id }}</td>
-                            <td>{{ $item->username }}</td>
-                            <td>{{ $item->mobile }}</td>
-                            <td>{{ $item->email }}</td>
-                            <td>{{ $item->created_at }}</td>
-                            <td>{{ $item->expires }}</td>
-                            <td>{{ $item->agent }}</td>
-                            <td>{{ $item->money }}</td>
+                            <td>{{ $item->user_id }}</td>
+                            <td>{{ $item->secret }}</td>
+                            <td>{{ $item->goods_id }}</td>
                             <td>{{ $item->status }}</td>
                             <td class="td-manage">
                                 <a title="编辑" href="javascript:;" onclick="member_edit('编辑','categories/create','{{ $item->id }}','340','200')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>

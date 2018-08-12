@@ -25,4 +25,6 @@ Route::namespace('Admin')->group(function () {
     Route::get('secrets', 'SecretController@index');
 
     Route::get('orders', 'OrderController@index');
+
+    Route::get('agents', 'AgentController@index');
 });
