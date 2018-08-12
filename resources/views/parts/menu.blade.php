@@ -5,9 +5,8 @@
 			<dt><i class="Hui-iconfont">&#xe629;</i> 卡密管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a href="article-list.html" title="发卡记录">发卡记录</a></li>
-					<li><a href="article-list.html" title="手动发卡">手动发卡</a></li>
-					<li><a href="article-list.html" title="卡密配置">卡密配置</a></li>
+					<li><a href="/admin/orders" title="发卡记录">发卡记录</a></li>
+					<li><a href="/admin/secrets" title="卡密配置">卡密配置</a></li>
 				</ul>
 			</dd>
 		</dl>
@@ -25,7 +24,7 @@
 			<dd>
 				<ul>
 					<li><a href="/admin/categories" title="分类管理">分类管理</a></li>
-					<li><a href="product-list.html" title="产品管理">产品管理</a></li>
+					<li><a href="/admin/goods" title="产品管理">产品管理</a></li>
 				</ul>
 			</dd>
 		</dl>
@@ -33,8 +32,8 @@
 			<dt><i class="Hui-iconfont">&#xe60d;</i> 会员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a href="member-list.html" title="会员列表">会员列表</a></li>
-					<li><a href="member-del.html" title="删除的会员">删除的会员</a></li>
+					<li><a href="/admin/member" title="会员列表">会员列表</a></li>
+					<li><a href="/admin/member-del" title="删除的会员">删除的会员</a></li>
 					<li><a href="member-level.html" title="等级管理">等级管理</a></li>
 					<li><a href="member-scoreoperation.html" title="积分管理">积分管理</a></li>
 					<li><a href="member-record-browse.html" title="浏览记录">浏览记录</a></li>
