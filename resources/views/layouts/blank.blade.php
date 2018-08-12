@@ -27,8 +27,6 @@
 </head>
 
 <body style="background:#e9ecf3">
-    @include('parts.header')
-    @include('parts.menu')
     @yield('content')
     @include('parts.footer')
 </body>
